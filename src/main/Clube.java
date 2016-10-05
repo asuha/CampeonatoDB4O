@@ -12,6 +12,7 @@ public class Clube implements Serializable {
     private ArrayList<Tecnico> tecnicos;
     private ArrayList<TorcidaOrganizada> torcidasOrganizadas;
     private ClassificacaoGeral classificacaoGeral;
+    private ArrayList<ClassificacaoRodada> classificacaoRodada;
     private Jogador jogador1;
     private Jogador jogador2;
     private Jogador jogador3;
@@ -29,12 +30,8 @@ public class Clube implements Serializable {
     private Jogador jogador15;
     private Jogador jogador16;
 
-    public Clube(ArrayList<Patrocinador> patrocinadores, ArrayList<Diretor> diretores, ArrayList<Tecnico> tecnicos,
-                 ArrayList<TorcidaOrganizada> torcidasOrganizadas){
-        this.patrocinadores = patrocinadores;
-        this.diretores = diretores;
-        this.tecnicos = tecnicos;
-        this.torcidasOrganizadas = torcidasOrganizadas;
+    public Clube(String nome){
+        this.nome = nome;
     }
 
     public String getNome() {
@@ -211,6 +208,14 @@ public class Clube implements Serializable {
 
     public void setJogador16(Jogador jogador16) {
         this.jogador16 = jogador16;
+    }
+
+    public ArrayList<ClassificacaoRodada> getClassificacaoRodada() {
+        return classificacaoRodada;
+    }
+
+    public void setClassificacaoRodada(ArrayList<ClassificacaoRodada> classificacaoRodada) {
+        this.classificacaoRodada = classificacaoRodada;
     }
 
 }

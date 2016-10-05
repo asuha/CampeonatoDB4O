@@ -8,11 +8,13 @@ public class ClassificacaoRodada implements Serializable {
 	private int posicao;
 	private Clube clube;
 	private Campeonato campeonato;
+    private Rodada rodada;
 
-    public ClassificacaoRodada(int posicao, Clube clube, Campeonato campeonato){
+    public ClassificacaoRodada(int posicao, Clube clube, Campeonato campeonato, Rodada rodada){
         this.posicao = posicao;
         this.clube = clube;
         this.campeonato = campeonato;
+        this.rodada = rodada;
     }
 
 	public int getPosicao() {
@@ -39,4 +41,11 @@ public class ClassificacaoRodada implements Serializable {
 		this.campeonato = campeonato;
 	}
 
+    public Rodada getRodada() {
+        return rodada;
+    }
+
+    public void setRodada(Rodada rodada) {
+        this.rodada = rodada;
+    }
 }

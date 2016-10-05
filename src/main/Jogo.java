@@ -2,11 +2,11 @@ package main;
 
 import java.io.Serializable;
 
-public class Jogos implements Serializable {
+public class Jogo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
     private Campeonato campeonato;
-    private Rodadas rodada;
+    private Rodada rodada;
     private Clube clube1;
     private Clube clube2;
     private int clube1Gol;
@@ -18,9 +18,9 @@ public class Jogos implements Serializable {
     private int clube1Vermelho;
     private int clube2Vermelho;
 
-    public Jogos(Campeonato campeonato, Rodadas rodada, Clube clube1, Clube clube2,
-                 int clube1Gol, int clube2Gol, int clube1Ponto, int clube2Ponto,
-                 int clube1Amarelo, int clube2Amarelo, int clube1Vermelho, int clube2Vermelho) {
+    public Jogo(Campeonato campeonato, Rodada rodada, Clube clube1, Clube clube2,
+                int clube1Gol, int clube2Gol, int clube1Ponto, int clube2Ponto,
+                int clube1Amarelo, int clube2Amarelo, int clube1Vermelho, int clube2Vermelho) {
         this.campeonato = campeonato;
         this.rodada = rodada;
         this.clube1 = clube1;
@@ -43,11 +43,11 @@ public class Jogos implements Serializable {
         this.campeonato = campeonato;
     }
 
-    public Rodadas getRodada() {
+    public Rodada getRodada() {
         return rodada;
     }
 
-    public void setRodada(Rodadas rodada) {
+    public void setRodada(Rodada rodada) {
         this.rodada = rodada;
     }
 

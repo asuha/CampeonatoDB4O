@@ -14,7 +14,7 @@ import java.util.List;
 
 public class JogadorTest {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         // Criando ou abrindo o banco de dados
         ObjectContainer db = Db4oEmbedded.openFile("jogador.db");
         List<Jogador> jogadores = new ArrayList<>();
@@ -50,13 +50,13 @@ public class JogadorTest {
 		*/
 
         // Recuperar todos objetos
-        jogadores = db.query(Jogador.class);
+        /*jogadores = db.query(Jogador.class);
         for (Jogador each : jogadores) {
             ObjectInfo objectInfo = db.ext().getObjectInfo(each);
             System.out.println("ID gerado: " + objectInfo.getInternalID() + " Nome: " + each.getNome());
         }
 
         db.close();
-    }
+    }*/
 
 }
