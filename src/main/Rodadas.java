@@ -1,19 +1,26 @@
 package main;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class Rodadas implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
-	private long id;
     private int totalJogos;
     private int totalGols;
     private int totalAmarelos;
     private int totalVermelhos;
     private Jogador artilheiro;
     private Campeonato campeonato;
+
+    public Rodadas(int totalJogos, int totalGols, int totalAmarelos, int totalVermelhos,
+                   Jogador artilheiro, Campeonato campeonato) {
+        this.totalJogos = totalJogos;
+        this.totalGols = totalGols;
+        this.totalAmarelos = totalAmarelos;
+        this.totalVermelhos = totalVermelhos;
+        this.artilheiro = artilheiro;
+        this.campeonato = campeonato;
+    }
 
     public int getTotalJogos() {
         return totalJogos;

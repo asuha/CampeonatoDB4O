@@ -6,11 +6,7 @@ import java.util.ArrayList;
 public class Clube implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
-	private long id;
-
     private String nome;
-
     private ArrayList<Patrocinador> patrocinadores;
     private ArrayList<Diretor> diretores;
     private ArrayList<Tecnico> tecnicos;
@@ -32,6 +28,7 @@ public class Clube implements Serializable {
     private Jogador jogador14;
     private Jogador jogador15;
     private Jogador jogador16;
+
     public Clube(ArrayList<Patrocinador> patrocinadores, ArrayList<Diretor> diretores, ArrayList<Tecnico> tecnicos,
                  ArrayList<TorcidaOrganizada> torcidasOrganizadas){
         this.patrocinadores = patrocinadores;

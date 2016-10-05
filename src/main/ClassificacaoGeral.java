@@ -6,10 +6,15 @@ import java.io.Serializable;
 public class ClassificacaoGeral implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-    private long id;
     private int posicao;
     private Clube clube;
     private Campeonato campeonato;
+
+    public ClassificacaoGeral(int posicao, Clube clube, Campeonato campeonato){
+        this.posicao = posicao;
+        this.clube = clube;
+        this.campeonato = campeonato;
+    }
 
     public int getPosicao() {
         return posicao;

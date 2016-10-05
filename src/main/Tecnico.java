@@ -6,8 +6,6 @@ import java.util.ArrayList;
 public class Tecnico implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
-	private long id;
     private String nome;
     private ArrayList<Clube> clubes;
 
