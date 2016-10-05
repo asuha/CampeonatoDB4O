@@ -75,7 +75,7 @@ public class Rodada implements Serializable {
             }
         }
 
-        setTotalGols(totalVermelhos);
+        setTotalVermelhos(totalVermelhos);
     }
 
     public int getTotalJogos() {
